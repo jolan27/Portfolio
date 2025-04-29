@@ -1,0 +1,358 @@
+/* Css pour le contenu de la page (à droite de la navBar) : */
+.descriptif {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
+    gap: 0.5em;
+}
+
+/*------------------------------------Style pour la section accueil: ----------------------------*/
+.accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-size:xx-large;
+    color: var(--textColor);
+}
+
+.NomAccueil, .sous_titre_accueil {
+    display: flex;
+    margin-left: 5%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.NomAccueil {
+    height: 1.5em;
+}
+
+.sous_titre_accueil {
+    margin-top: 1em;
+}
+
+
+/*------------------------------------Style pour la section a propos de moi: ------------------------*/
+.propos_moi {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorBackgroundAltern);
+    color:  var(--textColor);
+}
+
+.boxParentPropos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.boxPhotoPropos {
+    display: flex;
+    width: 20%;
+}
+
+.photoPropos {
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+
+.svgProposSection {
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.titre_a_propos {
+    display: flex;
+    margin-left: 2%;
+    line-height: 32px;
+}
+
+.proposPresentation {
+    display: flex;
+    /* visibility: hidden; */
+    width: 80%;
+}
+
+
+/*------------------------------------Style pour la section compétences: ----------------------------*/
+.competences {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    width: 100%;
+    color:  var(--textColor);
+}
+
+
+.titreCompetences {
+    display: flex;
+    margin-left: 2%;
+}
+
+.introTech {
+    display: flex;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.boxLogoTech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+.logHtml, .logCss, .logJs, .logReact, .logPhp, .logPython, .logSql {
+    display: flex;
+    visibility: hidden;
+    border: solid 1px black;
+    border-radius: 5%;
+    height: 170px;
+    width: 170px;
+    box-shadow: 5px 5px 8px black;
+}
+
+/*Class pour l'animation lors du premier passage a l'ecran*/
+.logsAnim {
+    visibility: visible;
+    animation: observer 1s ease-in-out;
+}
+
+.logsAnimBas {
+    visibility: visible;
+    animation: observerBas 1s ease-in-out;
+}
+
+.logPhp, .logPython, .logSql{
+    margin-top: 3%;
+}
+
+.logHtml:hover, .logCss:hover, .logJs:hover, .logReact:hover, .logPhp:hover, .logPython:hover, .logSql:hover {
+    background-color: orangered;
+}
+
+.boxTitreTech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.titreLogo {
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    width: 170px;
+}
+
+.titreLogoVisible {
+    visibility: visible;
+    animation: observer 1s ease-in-out;
+}
+
+.titreLogo2 {
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    width: 170px;
+    height: 28px;
+}
+
+.titreLogsAnimBas {
+    visibility: visible;
+    animation: observerTitreBas 1s ease-in-out;
+}
+
+.imgLogo {
+    height: 170px;
+    width: 170px;
+}
+
+/*------------------------------------Style pour la section parcours: ----------------------------*/
+
+.monParcours {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorBackgroundAltern);
+    color:  var(--textColor);
+}
+
+.svgParcoursSection {
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.titre_parcours, .sousTitreParcours {
+    display: flex;
+    margin-left: 2%;
+    line-height: 32px;
+}
+
+.boxAndHiden {
+    display: flex;
+    flex-direction: row;
+}
+
+.boxDiplome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5%;
+    width: 30%;
+}
+
+.btsSio, .cqp, .alternance, .bac{
+    display: flex;
+    border: solid 1px black;
+    border-radius: 5px;
+    flex-direction: column;
+    width: 170px;
+}
+
+.btsSio:hover, .cqp:hover, .alternance:hover, .bac:hover {
+    box-shadow: 5px 5px 8px black;
+}
+
+.hidenText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.textHidenBox {
+    display: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px black;
+    animation: fadeIn 1s ease-in-out;
+    width: 80%;
+}
+
+
+/*------------------------------------Style pour la section projets: ----------------------------*/
+
+.projets {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: var(--textColor);
+}
+
+.svgProjetsSection {
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.titre_projets, .sousTitreProjets {
+    display: flex;
+    margin-left: 2%;
+    line-height: 32px;
+}
+
+.parentBoxProjets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.puntos, .siteEscalade {
+    display: flex;
+    border-radius: 5%;
+    width: 170px;
+    height: 170px;
+}
+
+.puntos:hover, .siteEscalade:hover {
+    box-shadow: 8px 5px 8px var(--hoverColor);
+}
+
+.parentBoxHideProjet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.hideProjets {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+}
+
+.hideInfo {
+    display: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: var(--cardsColor);
+    color: var(--textColor);
+    height: auto;
+    width: 100%;
+    margin-top: 3%;
+    animation: fadeUp 1s ease-in-out;
+    box-shadow: 5px 5px 8px black;
+}
+
+
+/*-------------------------------------Style pour la section Veille: --------------------------------------*/
+
+.veille {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorBackgroundAltern);
+    color: var(--textColor);
+}
+
+.svgVeilleSection {
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.titreVeille, .sousTitreVeille {
+    display: flex;
+    margin-left: 2%;
+    line-height: 32px;
+}
+
+/*-------------------------------------Style pour la section contact: ---------------------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorBackgrouned);
+    color: var(--textColor);
+}
+
+.svgContactFooter {
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
